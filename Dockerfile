@@ -14,4 +14,4 @@ VOLUME /src
 WORKDIR /src
 
 EXPOSE 1313
-CMD hugo server --baseURL=http://localhost:1313 --bind=0.0.0.0
+ENTRYPOINT ["hugo"]
