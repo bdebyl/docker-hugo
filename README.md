@@ -18,7 +18,7 @@ keep things clean, or naming your container appropriately for re-use._
 The following example should be used for reference when running the server with
 all necessary options:
 ```
-docker run -v /path/to/hugo/site:/src -p 127.0.0.1:1313:1313/tcp server --bind=0.0.0.0
+docker run -it --rm --user $(id -u $USER):$(id -g $USER) -v /home/bastian/src/bdebyl-site:/src -p 1313:1313/tcp bdebyl/hugo server --bind=0.0.0.0
 ```
 
 # Server
