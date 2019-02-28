@@ -3,7 +3,7 @@ MAINTAINER Bastian de Byl <bastiandebyl@gmail.com>
 
 ENV HUGO_DIR /usr/local/hugo
 ENV HUGO_BIN_DIR /usr/local/bin
-ENV HUGO_RELEASE_VER 0.54
+ENV HUGO_RELEASE_VER 0.54.0
 
 RUN mkdir ${HUGO_DIR}
 ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_RELEASE_VER}/hugo_${HUGO_RELEASE_VER}_Linux-64bit.tar.gz ${HUGO_DIR}
