@@ -1,9 +1,12 @@
 # Hugo Docker
-This is a Alpine based Docker image used to host docker sites from a minimal
-image.
+Dockerized [Hugo](http://gohugo.io/) in [Alpine](https://www.alpinelinux.org/).
 
 Usage of this image assumes basic understanding
 of [**running Docker images**](https://docs.docker.com/engine/reference/run/).
+
+[![pipeline](https://img.shields.io/gitlab/pipeline/bdebyl/docker-hugo.svg)](https://gitlab.com/bdebyl/docker-hugo/pipelines)
+[![docker pulls](https://img.shields.io/docker/pulls/bdebyl/hugo.svg)](http://hub.docker.com/r/bdebyl/hugo/)
+
 
 # Usage
 The basic entrypoint of the docker image is the `hugo` binary. This means it's
