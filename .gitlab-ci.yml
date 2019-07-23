@@ -1,36 +1,24 @@
-image: docker:stable
-
-variables:
-  DOCKER_HOST: tcp://docker:2375/
-  DOCKER_DRIVER: overlay2
-
-services:
-  - docker:dind
-
-before_script:
-  - docker info
-
 stages:
   - build
-  - build-tag
-  - deploy-tag
+  - tag
+  - publish
 
-build-commit-image:
+build:
   stage: build
   script:
     - docker build -t "$CI_DOCKER_USER/$CI_DOCKER_IMAGE" .
   except:
     - tags
 
-build-image-tag:
-  stage: build-tag
+tag:
+  stage: tag
   script:
     - docker build -t "$CI_DOCKER_USER/$CI_DOCKER_IMAGE:$CI_COMMIT_TAG" -t "$CI_DOCKER_USER/$CI_DOCKER_IMAGE:latest" .
   only:
     - tags
 
-deploy-image-tag:
-  stage: deploy-tag
+publish:
+  stage: publish
   before_script:
     - docker login -u "$CI_DOCKER_USER" -p "$CI_DOCKER_PASSWORD" $CI_REGISTRY
   script:
