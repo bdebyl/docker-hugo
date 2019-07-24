@@ -1,5 +1,5 @@
 FROM alpine:3.9
-MAINTAINER Bastian de Byl <bastiandebyl@gmail.com>
+MAINTAINER Bastian de Byl <bastian@bdebyl.net>
 
 ENV HUGO_DIR /usr/local/hugo
 ENV HUGO_BIN_DIR /usr/local/bin
