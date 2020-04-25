@@ -1,9 +1,9 @@
-FROM alpine:3.10.2
+FROM alpine:3.11.6
 MAINTAINER Bastian de Byl <bastian@bdebyl.net>
 
 ENV HUGO_DIR /usr/local/hugo
 ENV HUGO_BIN_DIR /usr/local/bin
-ENV HUGO_RELEASE_VER 0.58.3
+ENV HUGO_RELEASE_VER 0.69.2
 
 RUN mkdir ${HUGO_DIR}
 ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_RELEASE_VER}/hugo_${HUGO_RELEASE_VER}_Linux-64bit.tar.gz ${HUGO_DIR}
