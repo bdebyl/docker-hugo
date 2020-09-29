@@ -28,7 +28,7 @@ steps:
         exclude:
           - master
 
-  - name: build
+  - name: publish
     image: plugins/docker
     settings:
       username:
