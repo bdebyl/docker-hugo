@@ -4,7 +4,7 @@ MAINTAINER Bastian de Byl <bastian@bdebyl.net>
 ENV HUGO_DIR /usr/local/hugo
 ENV HUGO_BIN_DIR /usr/local/bin
 
-RUN apk add --no-cache curl wget
+RUN apk add --no-cache curl wget git
 
 RUN mkdir ${HUGO_DIR} && \
     export HUGO_URL="$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | awk '/browser_download_url.*Linux-ARM.tar.gz/{print $2}' | tr -d '"')" && \
