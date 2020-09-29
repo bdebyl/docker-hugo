@@ -7,7 +7,7 @@ platform:
   arch: arm
 
 steps:
- 	- name: gate
+  - name: gate
     image: bdebyl/alpine-git
     commands:
       - git fetch origin +refs/heads/master

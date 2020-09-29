@@ -10,7 +10,7 @@ ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_RELEASE_VER}/hugo
 RUN find ${HUGO_DIR} -name "hugo*.tar.gz" -exec tar xzvf {} -C ${HUGO_DIR} \; -exec rm -v {} \; \
     && ln -s ${HUGO_DIR}/hugo ${HUGO_BIN_DIR}
 
-VOLUME /src
+VOLUME ["/src"]
 WORKDIR /src
 
 EXPOSE 1313
