@@ -4,7 +4,7 @@ Dockerized [Hugo](http://gohugo.io/) in [Alpine](https://www.alpinelinux.org/).
 Usage of this image assumes basic understanding
 of [**running Docker images**](https://docs.docker.com/engine/reference/run/).
 
-[![pipeline](https://img.shields.io/gitlab/pipeline/bdebyl/docker-hugo.svg)](https://gitlab.com/bdebyl/docker-hugo/pipelines)
+[![Build Status](https://ci.bdebyl.net/api/badges/bdebyl/docker-hugo/status.svg)](https://ci.bdebyl.net/bdebyl/docker-hugo)
 [![docker pulls](https://img.shields.io/docker/pulls/bdebyl/hugo.svg)](http://hub.docker.com/r/bdebyl/hugo/)
 
 
