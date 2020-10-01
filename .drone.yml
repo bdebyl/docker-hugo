@@ -37,3 +37,8 @@ steps:
         from_secret: docker_password
       repo: bdebyl/hugo
       auto_tag: true
+---
+kind: signature
+hmac: b274d09f7d1c5d681fdec042f9e67d95b16b10c174ac6c46a097b34ca03830d3
+
+...
