@@ -2,10 +2,6 @@
 kind: pipeline
 name: default
 
-platform:
-  os: linux
-  arch: arm
-
 steps:
   - name: gate-master
     image: bdebyl/alpine-git
@@ -39,6 +35,6 @@ steps:
       auto_tag: true
 ---
 kind: signature
-hmac: b274d09f7d1c5d681fdec042f9e67d95b16b10c174ac6c46a097b34ca03830d3
+hmac: a7663295a7a9ee1d46fd3f5115237389b3b22ef17825aee2a142c9b545d21adc
 
 ...
